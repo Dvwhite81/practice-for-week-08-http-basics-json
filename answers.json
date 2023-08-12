@@ -2,211 +2,253 @@
   "1": {
     "endpoint": "Ask for the Home Page",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "GET",
+      "URL": "/",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "HTML page with navigation links to other pages"
     }
   },
   "2": {
     "endpoint": "Ask for a page that doesn't exist",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/hello-world",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 404,
+      "body": "404 Not Found page"
     }
   },
   "3": {
     "endpoint": "Ask for the products list page",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/products",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Products List page"
     }
   },
   "4": {
     "endpoint": "Ask for the product detail page",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/products/:productId",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Products Details page"
     }
   },
   "5": {
     "endpoint": "Ask for the create new product page",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/products/new",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Create New Product page"
     }
   },
   "6": {
     "endpoint": "Submit a new product",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/products",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "HTML of completed form"
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 302,
+      "body": "New Product page"
     }
   },
   "7": {
     "endpoint": "Ask for the edit product page",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/products/:productId/edit",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Edit Product page"
     }
   },
   "8": {
     "endpoint": "Submit an edit for an existing product",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/products/:productId",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "HTML of completed form"
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 302,
+      "body": "Products Details page with edits"
     }
   },
   "9": {
     "endpoint": "Submit a delete for an existing product",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/products/:productId/delete",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 302,
+      "body": "Products List page"
     }
   },
   "10": {
     "endpoint": "Submit a new review for a product",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/products/:productId/reviews",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "HTML of completed review"
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 302,
+      "body": "Products Details page with new review"
     }
   },
   "11": {
     "endpoint": "Ask for the edit review page for a product",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/reviews/:reviewId/edit",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Edit Review Form page"
     }
   },
   "12": {
     "endpoint": "Submit an edit for an existing review",
     "request": {
-      "method": "",
-      "URL": "",
-      "headers": null,
-      "body": null
+      "method": "POST",
+      "URL": "/reviews/:reviewId",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "HTML of edited review form"
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 302,
+      "body": "Products Details page"
     }
   },
   "13": {
     "endpoint": "Submit a delete for an existing review",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "POST",
+      "URL": "/reviews/:reviewId/delete",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 302,
+      "body": "Products Details page"
     }
   },
   "14": {
     "endpoint": "Ask for all the products in a particular category by tag of the category",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/categories/:tag/products",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Category Products List page"
     }
   },
   "15": {
     "endpoint": "Ask for the best-selling product",
     "request": {
-      "method": "",
-      "URL": "",
+      "method": "GET",
+      "URL": "/products/best-selling",
       "headers": null,
-      "body": null
+      "body": ""
     },
     "response": {
-      "headers": null,
-      "statusCode": null,
-      "body": null
+      "headers": {
+        "Content-Type": "text/html"
+      },
+      "statusCode": 200,
+      "body": "Best Selling Product page"
     }
   }
 }
